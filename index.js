@@ -1,11 +1,18 @@
-function calculateTax (amount) {
-    return amount * 0.01
+// Calculate Tax Function
+function calculateTax(amount){
+    let taxValue = amount * 0.10
+    return taxValue
 }
 
-function convertToUpperCase (text) {
-    return string.toUpperCase()
+
+// Convert to Upper Case Function
+function convertToUpperCase(text){
+    let result = String(text).toUpperCase()
+    return result
 }
 
+
+// Find Maximum Function
 function findMaximum (num1, num2) {
     if (num1 > num2) {
         return num1
@@ -14,18 +21,18 @@ function findMaximum (num1, num2) {
     }
 }
 
+
+// Palindrome Function
 function isPalindrome(word) {
     return word === word.split('').reverse().join('')
 }
 
-function calculateDiscountedPrice(originalPrice, discountedPercentage) {
+
+// Function to calculate discounted price
+function calculateDiscountedPrice(originalPrice, discountPercentage) {
     const discountAmount = originalPrice * (discountPercentage/100)
     return originalPrice - discountAmount
 }
-const originalPrice = 100
-const discountPercentage = 20
-const cost = calculateDiscountedPrice(100,20)
-console.log(cost)
 
 
 
